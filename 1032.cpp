@@ -3,10 +3,16 @@ using namespace std;
 
 int main()
 {
-  int a, b, c;
-  scanf("%1d%1d%1d", &a, &b, &c);
+  double pi = 3.14;
+  int h, r; // cm
+  cin >> h >> r;
 
-  printf("%d%d%d", c, b, a);
+  double v = pi*pow(r, 2)*h; // cm³
+  double needDrink = 20*1000; // 1l=1000cm³
+
+  double tinNum = needDrink/v;
+
+  cout << ceil(tinNum);
 
   return 0;
 }
