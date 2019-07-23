@@ -6,7 +6,7 @@
       "type": "cppdbg",
       "request": "launch",
       "program": "C://Windows/System32/cmd.exe",//"${workspaceRoot}/build/${fileBasenameNoExtension}.exe",
-      "args": ["/k", "${workspaceRoot}/build/${fileBasenameNoExtension}.exe"],
+      "args": ["/c", "${workspaceRoot}/build/${fileBasenameNoExtension}.exe", "&", "echo.", "&", "pause"],
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}/build",
       "environment": [],
